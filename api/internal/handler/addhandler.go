@@ -23,7 +23,7 @@ func addHandler(ctx *svc.ServiceContext) http.HandlerFunc {
 		if err != nil {
 			httpx.Error(w, err)
 		} else {
-			httpx.WriteJson(w, http.StatusOK, resp)
+			httpx.OkJson(w, resp)
 		}
 	}
 }

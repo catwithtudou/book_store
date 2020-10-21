@@ -1,0 +1,26 @@
+info(
+	title: // TODO: add title
+	desc: // TODO: add description
+	author: zhengyu
+	email: 949812478@qq.com
+)
+
+type request struct {
+	// TODO: add members here and delete this comment
+}
+
+type response struct {
+	// TODO: add members here and delete this comment
+}
+
+service bookstore-api {
+	@server(
+		handler: // TODO: set handler name and delete this comment
+	)
+	get /users/id/:userId(request) returns(response)
+
+	@server(
+		handler: // TODO: set handler name and delete this comment
+	)
+	post /users/create(request)
+}

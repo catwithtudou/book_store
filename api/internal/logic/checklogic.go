@@ -10,17 +10,21 @@ import (
 )
 
 type CheckLogic struct {
-	ctx context.Context
 	logx.Logger
+	ctx    context.Context
+	svcCtx *svc.ServiceContext
 }
 
 func NewCheckLogic(ctx context.Context, svcCtx *svc.ServiceContext) CheckLogic {
 	return CheckLogic{
-		ctx:    ctx,
 		Logger: logx.WithContext(ctx),
+		ctx:    ctx,
+		svcCtx: svcCtx,
 	}
 }
 
 func (l *CheckLogic) Check(req types.CheckReq) (*types.CheckResp, error) {
+	// todo: add your logic here and delete this line
+
 	return &types.CheckResp{}, nil
 }
