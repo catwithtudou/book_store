@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8775c8af-fbf6-45fd-bf12-0a19d9aa7f75" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/book_store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/book_store.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc/model/book.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc/model/bookmodel.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc/model/vars.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/bookstore.api" beforeDir="false" afterPath="$PROJECT_DIR$/api/bookstore.api" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/etc/bookstore-api.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/etc/bookstore-api.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/internal/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/internal/config/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/internal/svc/servicecontext.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/internal/svc/servicecontext.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc/add/add.proto" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/add/add.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/add/etc/add.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/add/etc/add.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/add/internal/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/add/internal/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/add/internal/logic/addlogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/add/internal/logic/addlogic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/add/internal/svc/servicecontext.go" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/add/internal/svc/servicecontext.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/check/etc/check.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/check/etc/check.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/check/internal/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/check/internal/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/check/internal/logic/checklogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/check/internal/logic/checklogic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/check/internal/svc/servicecontext.go" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/check/internal/svc/servicecontext.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +49,22 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
+  <component name="RunManager">
+    <configuration name="go build book_store/api" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="book_store" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/api/bookstore.go" />
+      <package value="book_store/api" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build book_store/api" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
@@ -70,5 +91,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1174" y="382" key="EnvironmentVariablesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603296974908" />
+    <state width="1084" height="281" key="GridCell.Tab.0.bottom" timestamp="1603300278734">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1084" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603300278734" />
+    <state width="1084" height="281" key="GridCell.Tab.0.center" timestamp="1603300278734">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1084" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603300278734" />
+    <state width="1084" height="281" key="GridCell.Tab.0.left" timestamp="1603300278734">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1084" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603300278734" />
+    <state width="1084" height="281" key="GridCell.Tab.0.right" timestamp="1603300278734">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1084" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603300278734" />
   </component>
 </project>

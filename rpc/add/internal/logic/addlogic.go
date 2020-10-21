@@ -1,6 +1,7 @@
 package logic
 
 import (
+	"book_store/rpc/model"
 	"context"
 
 	"book_store/rpc/add/internal/svc"
@@ -24,6 +25,15 @@ func NewAddLogic(ctx context.Context, svcCtx *svc.ServiceContext) *AddLogic {
 }
 
 func (l *AddLogic) Add(in *add.AddReq) (*add.AddResp, error) {
+	err := l.svcCtx.Model.Insert(model.Book{
+		Book:  in.Book,
+		Price: in.Price,
+	})
+	if err != nil {
+		return nil, err
+	}
 
-	return &add.AddResp{}, nil
+	return &add.AddResp{
+		Ok: true,
+	}, nil
 }

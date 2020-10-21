@@ -74,3 +74,12 @@ rpc/check
 └── pb
     └── check.pb.go
 ```
+
+- model
+
+```
+rpc/model
+├── bookstore.sql
+├── bookstoremodel.go     // CRUD+cache代码
+└── vars.go               // 定义常量和变量
+```
