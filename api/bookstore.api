@@ -1,26 +1,41 @@
 info(
-	title: // TODO: add title
-	desc: // TODO: add description
-	author: zhengyu
+	title: book_store
+	desc: go-zero example
+	author: scott
 	email: 949812478@qq.com
 )
 
-type request struct {
-	// TODO: add members here and delete this comment
-}
+type (
+	addReq struct {
+		book  string `form:"book"`
+		price int64  `form:"price"`
+	}
 
-type response struct {
-	// TODO: add members here and delete this comment
-}
+	addResp struct {
+		ok bool `json:"ok"`
+	}
+)
+
+type (
+	checkReq struct {
+		book string `form:"book"`
+	}
+
+	checkResp struct {
+		found bool  `json:"found"`
+		price int64 `json:"price"`
+	}
+)
 
 service bookstore-api {
-	@server(
-		handler: // TODO: set handler name and delete this comment
-	)
-	get /users/id/:userId(request) returns(response)
+    @server(
+        handler: AddHandler
+    )
+    get /add(addReq) returns(addResp)
 
-	@server(
-		handler: // TODO: set handler name and delete this comment
-	)
-	post /users/create(request)
+    @server(
+        handler: CheckHandler
+    )
+    get /check(checkReq) returns(checkResp)
 }
+
